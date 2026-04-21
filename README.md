@@ -44,9 +44,15 @@ cd CBX
 2. Make the script executable:
 ```bash
 chmod +x cbx.py
+pip install requests --break-system-packages
 ```
 
-3. Move it to your local binaries so you can run it from anywhere:
+3. General usage
+```bash
+python3 cbx.py or python3 cbx.py --auto
+```
+
+4. Move it to your local binaries so you can run it from anywhere:
 ```bash
 sudo mv cbx.py /usr/local/bin/cbx
 ```
@@ -83,7 +89,5 @@ Inside the CBX prompt, type `/` and press Enter to pull up the interactive comma
 ## ⚠️ Disclaimer
 
 CBX is designed strictly for **authorized, educational, and professional security testing**. The developer assumes no liability and is not responsible for any misuse or damage caused by this program. Ensure you have explicit permission before running automated scripts or exploiting targets.
-```
 
----
 
