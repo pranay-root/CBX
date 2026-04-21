@@ -61,7 +61,7 @@ sudo mv cbx.py /usr/local/bin/cbx
 
 ## 💻 Usage
 
-Launch the copilot simply by typing:
+Launch the Agent simply by typing:
 
 ```bash
 cbx
