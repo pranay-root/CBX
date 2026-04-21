@@ -15,7 +15,6 @@ Built to run seamlessly in the terminal, CBX acts as a local expert that transla
 ## 🔥 Core Features
 
 * **Dual Engine Support:** Run local, uncensored models via **Ollama**, or connect to cloud-scale intelligence via **NVIDIA NIM API**.
-* **Autonomous Auto-Loop (`/hack`):** Toggle the agent into a self-driving loop. It analyzes tool outputs and automatically executes the next logical step until the goal is achieved.
 * **X11 Terminal Spawning (`/terminal`):** The AI can break out of the main prompt to launch secondary graphical terminal windows (using `x-terminal-emulator`) for listeners, reverse shells, or interactive installers.
 * **Zero-Lag UI:** Optimized for Linux terminals with non-blocking ANSI line-clearing, completely eliminating GIL stuttering.
 * **Execution Safety Check:** All background shells are bound by a strict 45-second execution timeout to prevent hanging commands.
@@ -38,25 +37,18 @@ CBX is heavily optimized for Debian-based systems, specifically **Kali Linux**.
 
 1. Clone the repository:
 ```bash
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPO.git](https://github.com/YOUR_USERNAME/YOUR_REPO.git)
-cd YOUR_REPO
-
-## 🚀 Installation
-
-1. Clone the repository:
-```bash
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPO.git](https://github.com/YOUR_USERNAME/YOUR_REPO.git)
-cd YOUR_REPO
+git clone https://github.com/pranay-root/CBX.git
+cd CBX
 ```
 
 2. Make the script executable:
 ```bash
-chmod +x lsgpt
+chmod +x cbx.py
 ```
 
 3. Move it to your local binaries so you can run it from anywhere:
 ```bash
-sudo mv lsgpt /usr/local/bin/lsgpt
+sudo mv cbx.py /usr/local/bin/cbx
 ```
 
 ---
@@ -66,12 +58,12 @@ sudo mv lsgpt /usr/local/bin/lsgpt
 Launch the copilot simply by typing:
 
 ```bash
-lsgpt
+cbx
 ```
 
 To run in entirely non-interactive mode (auto-approving all shell executions):
 ```bash
-lsgpt --auto
+cbx --auto
 ```
 
 ### The Command Grid
@@ -81,7 +73,7 @@ Inside the CBX prompt, type `/` and press Enter to pull up the interactive comma
 | :--- | :--- |
 | `/set <ip>` | Sets the target IP context for the AI. |
 | `/terminal` | Toggles the AI's permission to spawn new X11 terminal windows. |
-| `/hack` | Toggles Agent Auto-Iteration loop. |
+| `/hack` | Toggles Agent Auto-Iteration loop (comming soon). |
 | `/clear` | Resets the 49k token context memory. |
 | `/save` | Exports the current session context to JSON. |
 | `exit` | Closes the CBX interface. |
@@ -95,4 +87,3 @@ CBX is designed strictly for **authorized, educational, and professional securit
 
 ---
 
-Would you like me to help you draft a `requirements.txt` file or a quick `install.sh` bash script to automate that setup process for other users who download your tool?
