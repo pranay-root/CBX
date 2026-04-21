@@ -1,4 +1,3 @@
-```markdown
 # ⚡ CYBER BLOCKZ (CBX) AI TERMINAL ⚡
 
 
@@ -34,6 +33,13 @@ CBX is heavily optimized for Debian-based systems, specifically **Kali Linux**.
 * *(Optional)* **Ollama:** Installed locally and running if using local models.
 
 ---
+
+## 🚀 Installation
+
+1. Clone the repository:
+```bash
+git clone [https://github.com/YOUR_USERNAME/YOUR_REPO.git](https://github.com/YOUR_USERNAME/YOUR_REPO.git)
+cd YOUR_REPO
 
 ## 🚀 Installation
 
